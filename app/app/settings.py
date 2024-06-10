@@ -28,6 +28,8 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "drf_spectacular",
     "user",
+    "switchupsolar",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
@@ -122,8 +124,4 @@ AUTH_USER_MODEL = "core.User"
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
-}
-
-SPECTACULAR_SETTINGS = {
-    "DEFAULT_AUTO_SCHEMA_CLASS": ".custom_serializer.CustomAutoSchema",
 }
